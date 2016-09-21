@@ -95,6 +95,47 @@ vr5 {
     bottom:0;
     left:50%;
 }
+vr5 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 1150;
+    bottom:0;
+    left:50%;
+}
+vr6 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 950;
+    bottom:0;
+    left:50%;
+}
+vr7 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 750;
+    bottom:0;
+    left:50%;
+}
+vr8 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 7350;
+    bottom:0;
+    left:50%;
+}
+
 
 
 .question{

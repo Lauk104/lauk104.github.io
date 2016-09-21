@@ -64,6 +64,39 @@ vr2 {
     left:50%;
 }
 
+vr3 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top:800;
+    bottom:0;
+    left:50%;
+}
+
+vr4 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top:800;
+    bottom:0;
+    left:50%;
+}
+vr5 { 
+    display: block;
+    width:4px;
+    height: 200px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 1150;
+    bottom:0;
+    left:50%;
+}
+
+
 .question{
    background-color:#9A9A9A;
    box-shadow:5px 0 0 #9A9A9A, -5px 0 0 #9A9A9A;

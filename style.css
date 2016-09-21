@@ -140,7 +140,7 @@ vr8 {
 
 .question{
    background-color:#9A9A9A;
-   box-shadow:5px 0 0 #9A9A9A, -5px 0 0 #9A9A9A;
+   box-shadow:5px 0 0 #9A9A9A, -7px 0 0 #9A9A9A;
     padding: 5px 0;
 }
 
@@ -158,4 +158,25 @@ vr8 {
     top: 800;
     left: auto;
     z-index: -1;
+}
+
+.wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    
+}
+
+#slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.wrapper:hover #slide {
+    transition: .5s;
+    left: 0;
 }

@@ -180,3 +180,10 @@ vr8 {
     transition: .5s;
     left: 0;
 }
+
+.scroll-line{
+  height: 2px;
+  margin-bottom: -2px;
+  background: blue;
+  width: 0%;
+}

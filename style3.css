@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+overflow: hidden;
+  height: 100vh;
+  background-color: #000;
+}
+
+
+h1 {
+    position:absolute;
+    margin-top: 100px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 10px;
+  text-indent: 25px;
+  font-size: 10em;
+  color: #FFF;
+}
+
+h2 {
+    position:absolute;
+    margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  padding-left:27px;
+  font-size: 1em;
+  color: #FFF;
+}
+
+h3 {
+    margin-top: 75px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  padding-left:700px;
+  font-size: 1em;
+  color: #FFF;
+}
+
+a:link {
+    
+    text-decoration: none;
+    color:#fff;
+}
+
+a:visited {
+    
+    text-decoration: none;
+    color:#fff;
+}
+
+a:hover {
+    
+    text-decoration: none;
+    color:#fff;
+}
+
+a:active {
+    
+    text-decoration: none;
+    color:#fff;
+}
+
+li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.3s cubic-bezier(0.22, 0.5, 0.1, 1);
+}
+
+span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.3s cubic-bezier(0.22, 0.5, 0.1, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}

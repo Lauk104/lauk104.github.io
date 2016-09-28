@@ -20,6 +20,11 @@ h1 {
   text-indent: 25px;
   font-size: 10em;
   color: #FFF;
+  left:-25px;
+  animation-name: fadein;
+  animation-duration:1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 h2 {
@@ -105,4 +110,9 @@ span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
+}
+
+@keyframes fadein {
+    0%{opacity:0;left:-25px;}
+    100%{opacity:1;left:0px;}
 }

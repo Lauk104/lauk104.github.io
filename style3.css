@@ -11,6 +11,23 @@ overflow: hidden;
   background-color: #000;
 }
 
+h2 {
+    position:absolute;
+    margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  padding-left:27px;
+  font-size: 1em;
+  color: #FFF;
+  top:50px;
+  opacity:0;
+  animation-name: fadein2;
+  animation-duration:1s;
+  animation-delay: .25s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
 
 h1 {
     position:absolute;
@@ -27,15 +44,6 @@ h1 {
   animation-fill-mode: forwards;
 }
 
-h2 {
-    position:absolute;
-    margin-top: 100px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 10px;
-  padding-left:27px;
-  font-size: 1em;
-  color: #FFF;
-}
 
 h3 {
     margin-top: 75px;
@@ -44,6 +52,12 @@ h3 {
   padding-left:700px;
   font-size: 1em;
   color: #FFF;
+opacity:0;
+  animation-name: fadein;
+  animation-duration:1s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 a:link {
@@ -115,4 +129,9 @@ span:hover:after {
 @keyframes fadein {
     0%{opacity:0;left:-25px;}
     100%{opacity:1;left:0px;}
+}
+
+@keyframes fadein2 {
+    0%{opacity:0;top:15px;}
+    100%{opacity:1;top:0px;}
 }

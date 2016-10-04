@@ -14,12 +14,12 @@ background-size:cover;
 
 h32 {
   position:absolute;
-    margin-top: 125px;
+    margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  text-align: right;
+  text-align: left;
   font-size: 1em;
-  padding-right:125px;
+  padding-right:995px;
   color: #FFF;
 opacity:0;
 right:0;
@@ -33,12 +33,12 @@ right:0;
 
 h33 {
   position:absolute;
-    margin-top: 225px;
+    margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  text-align: right;
+  text-align: left;
   font-size: 1em;
-  padding-right:125px;
+  padding-right:500px;
   color: #FFF;
 opacity:0;
 right:0;

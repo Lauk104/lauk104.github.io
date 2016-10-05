@@ -22,8 +22,8 @@ h32 {
   color: #FFF;
 opacity:0;
   animation-name: fadein3;
-  animation-duration:.5s;
-  animation-delay:1s;
+  animation-duration:s;
+  animation-delay:.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   z-index: +2;
@@ -41,7 +41,7 @@ opacity:0;
 padding-left:350px;
   animation-name: fadein3;
   animation-duration:.5s;
-  animation-delay:1.15s;
+  animation-delay:.45s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   z-index: +1;
@@ -58,13 +58,29 @@ opacity:0;
 padding-left:775px;
   animation-name: fadein3;
   animation-duration:.5s;
-  animation-delay:1.3s;
+  animation-delay:.6s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
 
-
+h3 {
+    position:absolute;
+    margin-top: 350px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  line-height: 140%;
+  padding-left:500px;
+  font-size: .8em;
+  color: #FFF;
+  top:50px;
+  opacity:0;
+  animation-name: fadein4;
+  animation-duration:1s;
+  animation-delay: 1.25s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
 
 h2 {
     position:absolute;
@@ -72,13 +88,13 @@ h2 {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 10px;
   padding-left:120px;
-  font-size: 1em;
+  font-size: .8em;
   color: #FFF;
   top:50px;
   opacity:0;
   animation-name: fadein2;
   animation-duration:1s;
-  animation-delay: .25s;
+  animation-delay: 1.25s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -87,14 +103,17 @@ h2 {
 h1 {
     position:absolute;
     margin-top: 100px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
+  font-style: normal;
   letter-spacing: 10px;
   text-indent: 125px;
   font-size: 10em;
   color: #FFF;
   left:-25px;
+  opacity:0;
   animation-name: fadein;
   animation-duration:1s;
+  animation-delay: 1.25s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -186,7 +205,7 @@ vr {
     opacity:0;
     animation-name: slideIn;
   animation-duration:.5s;
-  animation-delay:.5s;
+  animation-delay:0s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -202,7 +221,7 @@ vr2 {
     opacity:0;
     animation-name: slideIn2;
   animation-duration:.5s;
-  animation-delay:.65s;
+  animation-delay:.15s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -218,7 +237,24 @@ vr3 {
     opacity:0;
     animation-name: slideIn2;
   animation-duration:.5s;
-  animation-delay:.8s;
+  animation-delay:.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+vr4 { 
+    display: block;
+    width:175px;
+    height: 1.5px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    bottom:0;
+    top:-217;
+    left:-170;
+    opacity:0;
+    animation-name: slideIn3;
+  animation-duration:.5s;
+  animation-delay: 2.25s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -238,6 +274,10 @@ vr3 {
     0%{opacity:0;top:15px;}
     100%{opacity:1;top:0px;}
 }
+@keyframes fadein4 {
+    0%{opacity:0;top:-15px;}
+    100%{opacity:1;top:0px;}
+}
 
 @keyframes slideIn {
     0%{width:0;opacity:0;}
@@ -247,4 +287,9 @@ vr3 {
 @keyframes slideIn2 {
     0%{width:0;opacity:0;}
     100%{width:350;opacity:1;}
+}
+
+@keyframes slideIn3 {
+    0%{width:0;opacity:0;}
+    100%{width:25;opacity:1;}
 }

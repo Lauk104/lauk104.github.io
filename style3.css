@@ -14,20 +14,19 @@ background-size:cover;
 
 h32 {
   position:absolute;
+  padding-left:100px;
     margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  text-align: left;
-  font-size: 1em;
-  padding-right:995px;
+  font-size: .8em;
   color: #FFF;
 opacity:0;
-right:0;
   animation-name: fadein3;
-  animation-duration:1s;
+  animation-duration:.5s;
   animation-delay:1s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+  z-index: +2;
 }
 
 
@@ -36,15 +35,30 @@ h33 {
     margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  text-align: left;
-  font-size: 1em;
-  padding-right:500px;
+  font-size: .8em;
   color: #FFF;
 opacity:0;
-right:0;
+padding-left:350px;
   animation-name: fadein3;
-  animation-duration:1s;
+  animation-duration:.5s;
   animation-delay:1.15s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  z-index: +1;
+}
+
+h34 {
+  position:absolute;
+    margin-top: 550px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: .8em;
+  color: #FFF;
+opacity:0;
+padding-left:775px;
+  animation-name: fadein3;
+  animation-duration:.5s;
+  animation-delay:1.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -160,6 +174,55 @@ span:hover:after {
   width:1920px;height:975px;
 }
 
+vr { 
+    display: block;
+    width:175px;
+    height: 1.5px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    top:575;
+    bottom:0;
+    left:125;
+    opacity:0;
+    animation-name: slideIn;
+  animation-duration:.5s;
+  animation-delay:.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+vr2 { 
+    display: block;
+    width:175px;
+    height: 1.5px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    bottom:0;
+    left:250;
+    opacity:0;
+    animation-name: slideIn2;
+  animation-duration:.5s;
+  animation-delay:.65s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+vr3 { 
+    display: block;
+    width:175px;
+    height: 1.5px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    bottom:0;
+    left:425;
+    opacity:0;
+    animation-name: slideIn2;
+  animation-duration:.5s;
+  animation-delay:.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
 @keyframes fadein3 {
     0%{opacity:0;top:15px;}
     100%{opacity:1;top:0px;}
@@ -171,9 +234,17 @@ span:hover:after {
 }
 
 
-
-
 @keyframes fadein2 {
     0%{opacity:0;top:15px;}
     100%{opacity:1;top:0px;}
+}
+
+@keyframes slideIn {
+    0%{width:0;opacity:0;}
+    100%{width:175;opacity:1;}
+}
+
+@keyframes slideIn2 {
+    0%{width:0;opacity:0;}
+    100%{width:350;opacity:1;}
 }

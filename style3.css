@@ -13,16 +13,16 @@ background-size:cover;
 }
 
 h32 {
-  position:absolute;
+  position:fixed;
   padding-left:100px;
-    margin-top: 550px;
+  padding-top:43%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
   color: #FFF;
 opacity:0;
   animation-name: fadein3;
-  animation-duration:s;
+  animation-duration:.5s;
   animation-delay:.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -31,8 +31,8 @@ opacity:0;
 
 
 h33 {
-  position:absolute;
-    margin-top: 550px;
+  position:fixed;
+   padding-top:43%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
@@ -48,8 +48,8 @@ padding-left:350px;
 }
 
 h34 {
-  position:absolute;
-    margin-top: 550px;
+  position:fixed;
+  padding-top:43%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
@@ -199,7 +199,7 @@ vr {
     height: 1.5px; 
     background-color:#FFFFFF;
     position:absolute;
-    top:575;
+    top:79%;
     bottom:0;
     left:125;
     opacity:0;

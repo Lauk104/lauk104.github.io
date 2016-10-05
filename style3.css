@@ -13,9 +13,9 @@ background-size:cover;
 }
 
 h32 {
-  position:fixed;
+  position:absolute;
   padding-left:100px;
-  padding-top:43%;
+    margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
@@ -31,8 +31,8 @@ opacity:0;
 
 
 h33 {
-  position:fixed;
-   padding-top:43%;
+  position:absolute;
+    margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
@@ -48,8 +48,8 @@ padding-left:350px;
 }
 
 h34 {
-  position:fixed;
-  padding-top:43%;
+  position:absolute;
+    margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
@@ -199,7 +199,7 @@ vr {
     height: 1.5px; 
     background-color:#FFFFFF;
     position:absolute;
-    top:79%;
+    top:575;
     bottom:0;
     left:125;
     opacity:0;
@@ -254,7 +254,7 @@ vr4 {
     opacity:0;
     animation-name: slideIn3;
   animation-duration:.5s;
-  animation-delay: 2.25s;
+  animation-delay: 2.15s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }

@@ -12,11 +12,11 @@ body {
 
 h1{
   top:45%;
-  left:37.5%;
+  left:35%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  font-size: 1em;
-  line-height: 30px;
+  font-size: 1.2em;
+  line-height: 35px;
   text-align:center;
   color: #FFF;
   position:absolute;
@@ -25,12 +25,13 @@ h1{
 
 h2{
   position:absolute;
-  top:55%;
-  left:58.5%;
+  top:58%;
+  left:60%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
-  font-size: .8em;
+  font-size: .85em;
   line-height: 30px;
+  font-style:italic;
   text-align:center;
   color: #FFF;
   z-index:100;

@@ -1,21 +1,58 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+
 body {
-  overflow: scroll;
   overflow-x: hidden;
-  display: flex;
   flex-direction: column;
+  display:flex;
 overflow: hidden;
-  height: 100vh;
   background-image: url("http://imgon.net/di-4943.gif");
 background-size:cover;
+margin:0;
+}
+
+#rectangle{
+  position:absolute;
+    background:#1c1c1c;
+    width:100%;
+    height:100%;
+    z-index:5;
+    animation-name: fadeout;
+  animation-duration:.75s;
+  animation-delay:1.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; 
+}
+
+#bar{
+  position:absolute;
+    background:#FFFFFF;
+    width:0%;
+    height:6px;
+    z-index:6;
+    animation-name: bar;
+  animation-duration:1.6s;
+  animation-delay:0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; 
+}
+
+
+@-webkit-keyframes loading{
+  0%{
+    width: 0px;}
+
+  100%{
+    opacity: 0;
+    width: 300px;
+  }
 }
 
 h32 {
   position:absolute;
-  padding-left:100px;
-    margin-top: 550px;
+  padding-left:110px;
+  margin-top: 550px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-size: .8em;
@@ -23,12 +60,11 @@ h32 {
 opacity:0;
   animation-name: fadein3;
   animation-duration:.5s;
-  animation-delay:.3s;
+  animation-delay:2s;
   animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; 
   z-index: +2;
 }
-
 
 h33 {
   position:absolute;
@@ -38,10 +74,10 @@ h33 {
   font-size: .8em;
   color: #FFF;
 opacity:0;
-padding-left:350px;
+padding-left:360px;
   animation-name: fadein3;
   animation-duration:.5s;
-  animation-delay:.45s;
+  animation-delay:2.15s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   z-index: +1;
@@ -55,10 +91,60 @@ h34 {
   font-size: .8em;
   color: #FFF;
 opacity:0;
-padding-left:775px;
+padding-left:785px;
   animation-name: fadein3;
   animation-duration:.5s;
-  animation-delay:.6s;
+  animation-delay:2.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+h322 {
+  position:absolute;
+  padding-left:129px;
+  margin-top: 585px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: .8em;
+  color: #FFF;
+opacity:0;
+  animation-name: fadein4;
+  animation-duration:.5s;
+  animation-delay:3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; 
+  z-index: +2;
+}
+
+h333 {
+  position:absolute;
+    margin-top: 585px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: .8em;
+  color: #FFF;
+opacity:0;
+padding-left:379px;
+  animation-name: fadein4;
+  animation-duration:.5s;
+  animation-delay:3.15s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  z-index: +1;
+}
+
+h344 {
+  position:absolute;
+    margin-top: 585px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: .8em;
+  color: #FFF;
+opacity:0;
+padding-left:804px;
+  animation-name: fadein4;
+  animation-duration:.5s;
+  animation-delay:3.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -77,7 +163,7 @@ h3 {
   opacity:0;
   animation-name: fadein4;
   animation-duration:1s;
-  animation-delay: 1.25s;
+  animation-delay: 2.95s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -94,7 +180,7 @@ h2 {
   opacity:0;
   animation-name: fadein2;
   animation-duration:1s;
-  animation-delay: 1.25s;
+  animation-delay: 2.95s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -113,7 +199,7 @@ h1 {
   opacity:0;
   animation-name: fadein;
   animation-duration:1s;
-  animation-delay: 1.25s;
+  animation-delay: 2.95s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -193,6 +279,8 @@ span:hover:after {
   width:1920px;height:975px;
 }
 
+
+
 vr { 
     display: block;
     width:175px;
@@ -205,7 +293,7 @@ vr {
     opacity:0;
     animation-name: slideIn;
   animation-duration:.5s;
-  animation-delay:0s;
+  animation-delay:1.9s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -221,7 +309,7 @@ vr2 {
     opacity:0;
     animation-name: slideIn2;
   animation-duration:.5s;
-  animation-delay:.15s;
+  animation-delay:2.05s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -237,7 +325,7 @@ vr3 {
     opacity:0;
     animation-name: slideIn2;
   animation-duration:.5s;
-  animation-delay:.3s;
+  animation-delay:2.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -250,11 +338,11 @@ vr4 {
     position:absolute;
     bottom:0;
     top:-217;
-    left:-170;
+    left:-172;
     opacity:0;
     animation-name: slideIn3;
   animation-duration:.5s;
-  animation-delay: 2.15s;
+  animation-delay: 3.85s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -277,6 +365,19 @@ vr4 {
 @keyframes fadein4 {
     0%{opacity:0;top:-15px;}
     100%{opacity:1;top:0px;}
+}
+
+@keyframes fadeout {
+    0%{height:100%;}
+    100%{height:0%;}
+}
+
+@keyframes bar {
+    0%{width:0%;opacity:1;}
+    40%{width:70%;opacity:1;}
+    55%{width:85%;opacity:1;}
+    85%{width:100%;opacity:1;}
+    100%{width:100%;opacity:0;}
 }
 
 @keyframes slideIn {

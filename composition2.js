@@ -1,0 +1,2 @@
+$('#scene').parallax();
+alert("scroll");

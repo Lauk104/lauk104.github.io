@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+.layer2 {
+    background-image: url(http://i62.tinypic.com/fx5wd1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    top: -5%;
+}
+
+.layer1 {
+    background-image: url(http://i60.tinypic.com/sp94ls.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    top: -5%;
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: 	#000000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 30px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+
+#tag {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: 	#000000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: -60px;
+  padding-left: 300px;
+  padding-top: 100px;
+}

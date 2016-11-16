@@ -8,6 +8,7 @@ $('#elem').bind('mousewheel', function(e){
           alert("scrollup");
      }
 
+
      //prevent page fom scrolling
      return false;
  });

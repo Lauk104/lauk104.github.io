@@ -115,6 +115,23 @@ padding-left:360px;
   animation-fill-mode: forwards;
 }
 
+h36 {
+  position:absolute;
+    margin-top: 650px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: .8em;
+  color: #FFF;
+opacity:0;
+padding-left:785px;
+  animation-name: fadein3;
+  animation-duration:.5s;
+  animation-delay:2.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+
 
 h322 {
   position:absolute;
@@ -175,6 +192,23 @@ h355 {
   color: #FFF;
 opacity:0;
 padding-left:379px;
+  animation-name: fadein4;
+  animation-duration:.5s;
+  animation-delay:3.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+
+h366 {
+  position:absolute;
+    margin-top:685px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: .8em;
+  color: #FFF;
+opacity:0;
+padding-left:804px;
   animation-name: fadein4;
   animation-duration:.5s;
   animation-delay:3.3s;
@@ -390,6 +424,23 @@ vr22 {
     position:absolute;
     bottom:0;
     left:-254;
+    top:317;
+    opacity:0;
+    animation-name: slideIn2;
+  animation-duration:.5s;
+  animation-delay:-5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+vr23 { 
+    display: block;
+    width:175px;
+    height: 1.5px; 
+    background-color:#FFFFFF;
+    position:absolute;
+    bottom:0;
+    left:0;
     top:317;
     opacity:0;
     animation-name: slideIn2;

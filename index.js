@@ -12,6 +12,18 @@ setTimeout(function () {
        $('h11').css("top","200");
        
        $('h122').css("opacity",".15");
+       
+       $('#circle1').css("width","15");
+         $('#circle1').css("height","15");
+         setTimeout(function () {
+         $('#circle2').css("width","7.5");
+         $('#circle2').css("height","7.5");
+         }, 200);
+         
+          setTimeout(function () {
+         $('#circle3').css("width","7.5");
+         $('#circle3').css("height","7.5");
+          }, 400);
 }, 1000);
 console.log(currPage);
 $('body').bind('mousewheel', function(e){

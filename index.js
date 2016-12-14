@@ -16,15 +16,15 @@ setTimeout(function () {
        $('#circle1').css("width","15");
          $('#circle1').css("height","15");
          setTimeout(function () {
-         $('#circle2').css("width","7.5");
-         $('#circle2').css("height","7.5");
-         }, 200);
+         $('#circle2').css("width","8");
+         $('#circle2').css("height","8");
+         }, 100);
          
           setTimeout(function () {
-         $('#circle3').css("width","7.5");
-         $('#circle3').css("height","7.5");
-          }, 400);
-}, 1000);
+         $('#circle3').css("width","8");
+         $('#circle3').css("height","8");
+          }, 200);
+}, 1200);
 console.log(currPage);
 $('body').bind('mousewheel', function(e){
 
@@ -47,9 +47,9 @@ $('body').bind('mousewheel', function(e){
          $('h11').css("opacity","0");
        $('h11').css("top","150");
        
-         $('#circle1').css("width","7.5");
-         $('#circle1').css("height","7.5");
-         $('#circle1').css("opacity",".25");
+         $('#circle1').css("width","8");
+         $('#circle1').css("height","8");
+         $('#circle1').css("opacity",".3");
          
          setTimeout(function () {
          $('h132').css("opacity",".15");
@@ -107,9 +107,9 @@ $('body').bind('mousewheel', function(e){
          
          $('visit').css("opacity","0");
          
-         $('#circle2').css("width","7.5");
-         $('#circle2').css("height","7.5");
-         $('#circle2').css("opacity",".25");
+         $('#circle2').css("width","8");
+         $('#circle2').css("height","8");
+         $('#circle2').css("opacity",".3");
          
          $('h132').css("opacity","0");
          $('h132').css("top","150");
@@ -178,9 +178,9 @@ $('body').bind('mousewheel', function(e){
          
          $('visit').css("opacity","0");
          
-         $('#circle2').css("width","7.5");
-         $('#circle2').css("height","7.5");
-         $('#circle2').css("opacity",".25");
+         $('#circle2').css("width","8");
+         $('#circle2').css("height","8");
+         $('#circle2').css("opacity",".3");
          
          $('h132').css("opacity","0");
          $('h132').css("top","250");
@@ -236,9 +236,9 @@ $('body').bind('mousewheel', function(e){
          
          $('visit2').css("opacity","0");
          
-         $('#circle3').css("width","7.5");
-         $('#circle3').css("height","7.55");
-         $('#circle3').css("opacity",".25");
+         $('#circle3').css("width","8");
+         $('#circle3').css("height","8");
+         $('#circle3').css("opacity",".3");
          
          $('h142').css("opacity","0");
          $('h142').css("top","250");

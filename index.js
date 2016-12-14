@@ -1,6 +1,7 @@
 // JavaScript File
 var currPage = 0; 
 var canScroll = false;
+
 setTimeout(function () {
        $('h2').css("opacity","1");
        $('h2').css("left","0");
@@ -93,9 +94,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit').css("opacity","1");
-         
-         
-         
+         $('visit').css("z-index","2");
          canScroll=true;
          
          }, 600);
@@ -120,6 +119,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit').css("opacity","0");
+         $('visit').css("z-index","1");
          
          $('#circle2').css("width","8");
          $('#circle2').css("height","8");
@@ -154,6 +154,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit2').css("opacity","1");
+         $('visit2').css("z-index","2");
          
          canScroll=true;
          }, 600);
@@ -183,6 +184,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit2').css("opacity","0");
+         $('visit2').css("z-index","1");
          
          $('#circle3').css("width","8");
          $('#circle3').css("height","8");
@@ -218,6 +220,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit3').css("opacity","1");
+         $('visit3').css("z-index","2");
          
          canScroll=true;
          }, 600);
@@ -247,6 +250,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit3').css("opacity","0");
+         $('visit3').css("z-index","1");
          
          $('#circle4').css("width","8");
          $('#circle4').css("height","8");
@@ -282,6 +286,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit4').css("opacity","1");
+         $('visit4').css("z-index","2");
          
          canScroll=true;
          }, 600);
@@ -319,6 +324,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit').css("opacity","0");
+         $('visit').css("z-index","1");
          
          $('#circle2').css("width","8");
          $('#circle2').css("height","8");
@@ -377,6 +383,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit2').css("opacity","0");
+         $('visit2').css("z-index","1");
          
          $('#circle3').css("width","8");
          $('#circle3').css("height","8");
@@ -411,6 +418,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit').css("opacity","1");
+         $('visit').css("z-index","2");
          
          canScroll=true;
            }, 600);
@@ -442,6 +450,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit3').css("opacity","0");
+         $('visit3').css("z-index","1");
          
          $('#circle4').css("width","8");
          $('#circle4').css("height","8");
@@ -476,6 +485,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit2').css("opacity","1");
+         $('visit2').css("z-index","2");
          
          canScroll=true;
            }, 600);
@@ -507,6 +517,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","0");
          
          $('visit4').css("opacity","0");
+         $('visit4').css("z-index","1");
          
          $('#circle5').css("width","8");
          $('#circle5').css("height","8");
@@ -541,6 +552,7 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit3').css("opacity","1");
+         $('visit3').css("z-index","2");
          
          canScroll=true;
            }, 600);

@@ -1,5 +1,6 @@
 // JavaScript File
 var currPage = 0; 
+var canScroll = true;
 setTimeout(function () {
        $('h2').css("opacity","1");
        $('h2').css("left","0");
@@ -10,13 +11,16 @@ setTimeout(function () {
        $('h11').css("opacity","1");
        $('h11').css("top","200");
 }, 1000);
-
+console.log(currPage);
 $('body').bind('mousewheel', function(e){
 
 
-     if(e.originalEvent.deltaY > 75) {
+     if(e.originalEvent.deltaY > 80) {
          //scroll down
+         
          if (currPage==0){
+             if(canScroll){
+             canScroll=false;
          $('h2').css("opacity","0");
          $('h2').css("top","-50");
          
@@ -38,7 +42,7 @@ $('body').bind('mousewheel', function(e){
          $('#circle1').css("height","7.5");
          $('#circle1').css("opacity",".25");
          
-         currPage++;
+         currPage=1;
          
          setTimeout(function () {
          $('h4').css("opacity","1");
@@ -60,25 +64,90 @@ $('body').bind('mousewheel', function(e){
          $('#circle2').css("height","15");
          $('#circle2').css("opacity","1");
          
-         
+         canScroll=true;
          
          }, 600);
+         console.log(currPage);
+         }
+         }
          
+         if (currPage==1){
+             if(canScroll){
+              canScroll=false;
+         $('h4').css("opacity","0");
+         $('h4').css("top","0");
+         
+         $('h3').css("opacity","0");
+         $('h3').css("top","0");
+         
+         $('h31').css("opacity","0");
+         $('h31').css("top","150");
+         
+         $('#line').css("width","0");
+         
+         $('#rectangle2').css("height","0");
+         
+         $('visit').css("opacity","0");
+         
+         $('#circle2').css("width","7.5");
+         $('#circle2').css("height","7.5");
+         $('#circle2').css("opacity",".25");
+         
+         $('h132').css("opacity","0");
+         $('h132').css("top","150");
+         
+         setTimeout(function () {
+         $('h142').css("opacity",".15");
+         $('h142').css("top","200");
+         }, 200);
+         
+         $('#circle2').css("width","7.5");
+         $('#circle2').css("height","7.5");
+         $('#circle2').css("opacity",".25");
+         
+         currPage=2;
+         
+         setTimeout(function () {
+         $('h5').css("opacity","1");
+         $('h5').css("top","0");
+         
+         $('h51').css("opacity","1");
+         $('h51').css("top","0");
+         
+         $('h52').css("opacity","1");
+         $('h52').css("top","200");
+         
+         $('#line').css("width","47.5");
+         
+         $('#rectangle2').css("height","37.5");
+         
+         $('visit2').css("opacity","1");
+         
+         $('#circle3').css("width","15");
+         $('#circle3').css("height","15");
+         $('#circle3').css("opacity","1");
+         
+         
+         canScroll=true;
+         }, 600);
+         console.log(currPage);
          }
          
           console.log("scrolldn");
+          
            console.log(e.originalEvent);
            
          }
      
-     
+     }
      if (e.originalEvent.deltaY < -75)  {
          //scroll up
           console.log("scrollup");
           
           if(currPage==1)
           {
-           
+              if(canScroll){
+           canScroll=false;
              
              
              $('h4').css("opacity","0");
@@ -109,7 +178,7 @@ $('body').bind('mousewheel', function(e){
          $('h122').css("top","200");
          }, 200);
          
-            currPage--; 
+            currPage=0; 
            setTimeout(function () {
              $('h2').css("opacity","1");
              $('h2').css("top","0");
@@ -123,6 +192,71 @@ $('body').bind('mousewheel', function(e){
          
          $('h11').css("opacity","1");
        $('h11').css("top","200");
+       canScroll=true;
+           }, 600);
+            
+            
+          }
+          
+          
+          
+     }
+     
+     if(currPage==2)
+          {
+              if(canScroll){
+           canScroll=false;
+             
+             
+             $('h5').css("opacity","0");
+         $('h5').css("top","50");
+         
+         $('h51').css("opacity","0");
+         $('h51').css("top","50");
+         
+         $('h52').css("opacity","0");
+         $('h52').css("top","250");
+         
+         $('#line').css("width","0");
+         
+         $('#rectangle2').css("height","0");
+         
+         $('visit2').css("opacity","0");
+         
+         $('#circle3').css("width","7.5");
+         $('#circle3').css("height","7.55");
+         $('#circle3').css("opacity",".25");
+         
+         $('h142').css("opacity","0");
+         $('h142').css("top","250");
+         
+         setTimeout(function () {
+         
+         $('h132').css("opacity",".15");
+         $('h132').css("top","200");
+         }, 200);
+         
+            currPage=1; 
+           setTimeout(function () {
+             $('h4').css("opacity","1");
+         $('h4').css("top","0");
+         
+         $('h3').css("opacity","1");
+         $('h3').css("top","0");
+         
+         $('h31').css("opacity","1");
+         $('h31').css("top","200");
+         
+         $('#line').css("width","47.5");
+         
+         $('#rectangle2').css("height","37.5");
+         
+         $('visit').css("opacity","1");
+         
+         $('#circle2').css("width","15");
+         $('#circle2').css("height","15");
+         $('#circle2').css("opacity","1");  
+         canScroll=true;
            }, 600);
             
             
@@ -132,7 +266,8 @@ $('body').bind('mousewheel', function(e){
           
      }
 
-
+}
      //prevent page fom scrolling
-     return false;
+     console.log(canScroll);
+     console.log(currPage)
  });

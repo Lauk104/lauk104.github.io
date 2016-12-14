@@ -10,6 +10,8 @@ setTimeout(function () {
        
        $('h11').css("opacity","1");
        $('h11').css("top","200");
+       
+       $('h122').css("opacity",".15");
 }, 1000);
 console.log(currPage);
 $('body').bind('mousewheel', function(e){
@@ -32,15 +34,21 @@ $('body').bind('mousewheel', function(e){
          
          $('h11').css("opacity","0");
        $('h11').css("top","150");
+       
+         $('#circle1').css("width","7.5");
+         $('#circle1').css("height","7.5");
+         $('#circle1').css("opacity",".25");
          
          setTimeout(function () {
          $('h132').css("opacity",".15");
          $('h132').css("top","200");
+         
+         $('#circle2').css("width","15");
+         $('#circle2').css("height","15");
+         $('#circle2').css("opacity","1");
          }, 200);
          
-         $('#circle1').css("width","7.5");
-         $('#circle1').css("height","7.5");
-         $('#circle1').css("opacity",".25");
+         
          
          currPage=1;
          
@@ -60,9 +68,7 @@ $('body').bind('mousewheel', function(e){
          
          $('visit').css("opacity","1");
          
-         $('#circle2').css("width","15");
-         $('#circle2').css("height","15");
-         $('#circle2').css("opacity","1");
+         
          
          canScroll=true;
          
@@ -99,11 +105,11 @@ $('body').bind('mousewheel', function(e){
          setTimeout(function () {
          $('h142').css("opacity",".15");
          $('h142').css("top","200");
-         }, 200);
          
-         $('#circle2').css("width","7.5");
-         $('#circle2').css("height","7.5");
-         $('#circle2').css("opacity",".25");
+         $('#circle3').css("width","15");
+         $('#circle3').css("height","15");
+         $('#circle3').css("opacity","1");
+         }, 200);
          
          currPage=2;
          
@@ -122,11 +128,6 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit2').css("opacity","1");
-         
-         $('#circle3').css("width","15");
-         $('#circle3').css("height","15");
-         $('#circle3').css("opacity","1");
-         
          
          canScroll=true;
          }, 600);
@@ -176,6 +177,10 @@ $('body').bind('mousewheel', function(e){
          
          $('h122').css("opacity",".15");
          $('h122').css("top","200");
+         
+          $('#circle1').css("width","15");
+         $('#circle1').css("height","15");
+         $('#circle1').css("opacity","1");
          }, 200);
          
             currPage=0; 
@@ -185,10 +190,6 @@ $('body').bind('mousewheel', function(e){
              
              $('h1').css("opacity","1");
              $('h1').css("top","0");
-             
-             $('#circle1').css("width","15");
-         $('#circle1').css("height","15");
-         $('#circle1').css("opacity","1");
          
          $('h11').css("opacity","1");
        $('h11').css("top","200");
@@ -234,6 +235,10 @@ $('body').bind('mousewheel', function(e){
          
          $('h132').css("opacity",".15");
          $('h132').css("top","200");
+         
+         $('#circle2').css("width","15");
+         $('#circle2').css("height","15");
+         $('#circle2').css("opacity","1");  
          }, 200);
          
             currPage=1; 
@@ -253,9 +258,6 @@ $('body').bind('mousewheel', function(e){
          
          $('visit').css("opacity","1");
          
-         $('#circle2').css("width","15");
-         $('#circle2').css("height","15");
-         $('#circle2').css("opacity","1");  
          canScroll=true;
            }, 600);
             

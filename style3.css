@@ -113,7 +113,7 @@ h122 {
   color: #FFF;
   top:200px;
   left:100px;
-  opacity:.15;
+  opacity:0;
   -webkit-transition-duration: .3s;
   -webkit-transition-timing-function: ease;
 }

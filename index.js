@@ -93,10 +93,10 @@ $('body').bind('mousewheel', function(e){
              if(canScroll){
               canScroll=false;
          $('h4').css("opacity","0");
-         $('h4').css("top","0");
+         $('h4').css("top","-50");
          
          $('h3').css("opacity","0");
-         $('h3').css("top","0");
+         $('h3').css("top","-50");
          
          $('h31').css("opacity","0");
          $('h31').css("top","150");

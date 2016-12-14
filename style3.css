@@ -19,7 +19,7 @@ margin:0;
     height:100%;
     z-index:0;
     animation-name: fadeout;
-  animation-duration:1s;
+  animation-duration:1.25s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards; 
 }
@@ -31,7 +31,7 @@ margin:0;
     height:6px;
     z-index:6;
     animation-name: bar;
-  animation-duration:1s;
+  animation-duration:1.25s;
   animation-delay:0s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards; 
@@ -290,6 +290,58 @@ h62 {
 
 }
 
+h7 {
+    position:absolute;
+    margin-top: 100px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  letter-spacing: 0px;
+  text-indent: 125px;
+  font-size: 10em;
+  color: #FFF;
+  top:50px;
+  left:0px;
+  opacity:0;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+}
+
+h71 {
+    position:absolute;
+    margin-top: 90px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  padding-left:120px;
+  font-size: .8em;
+  color: #FFF;
+  top:50px;
+  left:0px;
+  opacity:0;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: .1s;
+
+}
+
+h72 {
+    position:absolute;
+    margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-style:regular;
+  letter-spacing:0px;
+  line-height:16px;
+  padding-left:120px;
+  font-size: .8em;
+  color: #FFF;
+  top:250px;
+  left:250px;
+  opacity:0;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: .2s;
+
+}
+
 h142 {
     position:absolute;
     margin-top: 100px;
@@ -308,6 +360,23 @@ h142 {
 }
 
 h152 {
+    position:absolute;
+    margin-top: 100px;
+  font-family: "Times New Roman";
+  font-weight:bold;
+  letter-spacing:0px;
+  line-height:16px;
+  padding-left:120px;
+  font-size: 35em;
+  color: #FFF;
+  top:250px;
+  left:100px;
+  opacity:0;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+}
+
+h162 {
     position:absolute;
     margin-top: 100px;
   font-family: "Times New Roman";
@@ -385,6 +454,26 @@ visit3 {
   -webkit-transition-delay: .4s;
 }
 
+visit4 {
+    position:absolute;
+    margin-top: 350px;
+  font-family: "Montserrat", sans-serif;
+  font-weight:900;
+  letter-spacing:3px;
+  line-height:16px;
+  padding-left:120px;
+  font-size: .8em;
+  color: #FFF;
+  top:71px;
+  left:275px;
+  opacity:0;
+  color:gray;
+  z-index: 1;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: .4s;
+}
+
 #rectangle2{
   position:absolute;
   width:95px;
@@ -411,18 +500,34 @@ visit3 {
 
 #circle1 {
   position:absolute;
+  top:30%;
+  left:90%;
+    background: white;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    -webkit-transition-duration: .35s;
+  -webkit-transition-timing-function: ease;
+    
+}
+
+#circle2 {
+  position:absolute;
+  display: block;
+    margin: auto;
   top:40%;
   left:90%;
     background: white;
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    -webkit-transition-duration: .3s;
+    opacity: .3;
+    -webkit-transition-duration: .35s;
   -webkit-transition-timing-function: ease;
     
 }
 
-#circle2 {
+#circle3 {
   position:absolute;
   display: block;
     margin: auto;
@@ -433,12 +538,12 @@ visit3 {
     height: 0px;
     border-radius: 50%;
     opacity: .3;
-    -webkit-transition-duration: .3s;
+    -webkit-transition-duration: .35s;
   -webkit-transition-timing-function: ease;
     
 }
 
-#circle3 {
+#circle4 {
   position:absolute;
   display: block;
     margin: auto;
@@ -449,12 +554,12 @@ visit3 {
     height: 0px;
     border-radius: 50%;
     opacity: .3;
-    -webkit-transition-duration: .3s;
+    -webkit-transition-duration: .35s;
   -webkit-transition-timing-function: ease;
     
 }
 
-#circle4 {
+#circle5 {
   position:absolute;
   display: block;
     margin: auto;
@@ -465,7 +570,7 @@ visit3 {
     height: 0px;
     border-radius: 50%;
     opacity: .3;
-    -webkit-transition-duration: .3s;
+    -webkit-transition-duration: .35s;
   -webkit-transition-timing-function: ease;
     
 }

@@ -1,6 +1,6 @@
 // JavaScript File
 var currPage = 0; 
-var canScroll = true;
+var canScroll = false;
 setTimeout(function () {
        $('h2').css("opacity","1");
        $('h2').css("left","0");
@@ -29,7 +29,16 @@ setTimeout(function () {
          $('#circle4').css("width","8");
          $('#circle4').css("height","8");
           }, 300);
-}, 1200);
+          
+          setTimeout(function () {
+         $('#circle5').css("width","8");
+         $('#circle5').css("height","8");
+          }, 400);
+          
+          setTimeout(function () {
+          canScroll = true;
+          }, 400);
+}, 1500);
 console.log(currPage);
 $('body').bind('mousewheel', function(e){
 
@@ -54,7 +63,7 @@ $('body').bind('mousewheel', function(e){
        
          $('#circle1').css("width","8");
          $('#circle1').css("height","8");
-         $('#circle1').css("opacity",".3");
+         $('#circle1').css("opacity",".35");
          
          setTimeout(function () {
          $('h132').css("opacity",".15");
@@ -114,7 +123,7 @@ $('body').bind('mousewheel', function(e){
          
          $('#circle2').css("width","8");
          $('#circle2').css("height","8");
-         $('#circle2').css("opacity",".3");
+         $('#circle2').css("opacity",".35");
          
          $('h132').css("opacity","0");
          $('h132').css("top","150");
@@ -177,7 +186,7 @@ $('body').bind('mousewheel', function(e){
          
          $('#circle3').css("width","8");
          $('#circle3').css("height","8");
-         $('#circle3').css("opacity",".3");
+         $('#circle3').css("opacity",".35");
          
          $('h142').css("opacity","0");
          $('h142').css("top","150");
@@ -220,6 +229,70 @@ $('body').bind('mousewheel', function(e){
            console.log(e.originalEvent);
            
          }
+         
+         if (currPage==3){
+             if(canScroll){
+              canScroll=false;
+          $('h6').css("opacity","0");
+         $('h6').css("top","-50");
+         
+         $('h61').css("opacity","0");
+         $('h61').css("top","-50");
+         
+         $('h62').css("opacity","0");
+         $('h62').css("top","150");
+         
+         $('#line').css("width","0");
+         
+         $('#rectangle2').css("height","0");
+         
+         $('visit3').css("opacity","0");
+         
+         $('#circle4').css("width","8");
+         $('#circle4').css("height","8");
+         $('#circle4').css("opacity",".35");
+         
+         $('h152').css("opacity","0");
+         $('h152').css("top","150");
+         
+         setTimeout(function () {
+         
+         $('h162').css("opacity",".15");
+         $('h162').css("top","200");
+         
+         $('#circle5').css("width","15");
+         $('#circle5').css("height","15");
+         $('#circle5').css("opacity","1");  
+         }, 200);
+         
+         currPage=4;
+         
+         setTimeout(function () {
+         $('h7').css("opacity","1");
+         $('h7').css("top","0");
+         
+         $('h71').css("opacity","1");
+         $('h71').css("top","0");
+         
+         $('h72').css("opacity","1");
+         $('h72').css("top","200");
+         
+         $('#line').css("width","47.5");
+         
+         $('#rectangle2').css("height","37.5");
+         
+         $('visit4').css("opacity","1");
+         
+         canScroll=true;
+         }, 600);
+         console.log(currPage);
+         }
+         
+          console.log("scrolldn");
+          
+           console.log(e.originalEvent);
+           
+         }
      
      }
      if (e.originalEvent.deltaY < -75)  {
@@ -249,7 +322,7 @@ $('body').bind('mousewheel', function(e){
          
          $('#circle2').css("width","8");
          $('#circle2').css("height","8");
-         $('#circle2').css("opacity",".3");
+         $('#circle2').css("opacity",".35");
          
          $('h132').css("opacity","0");
          $('h132').css("top","250");
@@ -307,7 +380,7 @@ $('body').bind('mousewheel', function(e){
          
          $('#circle3').css("width","8");
          $('#circle3').css("height","8");
-         $('#circle3').css("opacity",".3");
+         $('#circle3').css("opacity",".35");
          
          $('h142').css("opacity","0");
          $('h142').css("top","250");
@@ -372,7 +445,7 @@ $('body').bind('mousewheel', function(e){
          
          $('#circle4').css("width","8");
          $('#circle4').css("height","8");
-         $('#circle4').css("opacity",".3");
+         $('#circle4').css("opacity",".35");
          
          $('h152').css("opacity","0");
          $('h152').css("top","250");
@@ -403,6 +476,71 @@ $('body').bind('mousewheel', function(e){
          $('#rectangle2').css("height","37.5");
          
          $('visit2').css("opacity","1");
+         
+         canScroll=true;
+           }, 600);
+            
+            
+          }
+          
+          
+          
+     }
+     
+     if(currPage==4)
+          {
+              if(canScroll){
+           canScroll=false;
+             
+             
+             $('h7').css("opacity","0");
+         $('h7').css("top","50");
+         
+         $('h71').css("opacity","0");
+         $('h71').css("top","50");
+         
+         $('h72').css("opacity","0");
+         $('h72').css("top","250");
+         
+         $('#line').css("width","0");
+         
+         $('#rectangle2').css("height","0");
+         
+         $('visit4').css("opacity","0");
+         
+         $('#circle5').css("width","8");
+         $('#circle5').css("height","8");
+         $('#circle5').css("opacity",".35");
+         
+         $('h162').css("opacity","0");
+         $('h162').css("top","250");
+         
+         setTimeout(function () {
+         
+         $('h152').css("opacity",".15");
+         $('h152').css("top","200");
+         
+         $('#circle4').css("width","15");
+         $('#circle4').css("height","15");
+         $('#circle4').css("opacity","1");  
+         }, 200);
+         
+            currPage=3; 
+           setTimeout(function () {
+             $('h6').css("opacity","1");
+         $('h6').css("top","0");
+         
+         $('h61').css("opacity","1");
+         $('h61').css("top","0");
+         
+         $('h62').css("opacity","1");
+         $('h62').css("top","200");
+         
+         $('#line').css("width","47.5");
+         
+         $('#rectangle2').css("height","37.5");
+         
+         $('visit3').css("opacity","1");
          
          canScroll=true;
            }, 600);

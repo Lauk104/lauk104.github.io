@@ -46,9 +46,24 @@ a:visited{
 	display:inline-block;
 }
 
+.parent {
+	font-size:0px;
+	line-height: 0px;
+}
+
+.no-gutters {
+	margin:0;
+}
+.no-left-gutters {
+	margin-left:0;
+}
+.no-right-gutters {
+	margin-right:0;
+}
+
 .c1 {
 	width:130px;
-
+	background: white;
 }
 
 .c2 {
@@ -69,4 +84,10 @@ a:visited{
 
 .c6 {
 	width:930px;
+}
+
+img{
+	width:100%;
+	height:auto;
+	margin:0;
 }

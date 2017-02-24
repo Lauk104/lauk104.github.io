@@ -315,5 +315,6 @@ h4 {
 
 body {
 	background:white;
+	overflow: hidden;
 	margin:0;
 }

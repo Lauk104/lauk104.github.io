@@ -105,7 +105,8 @@ function getRandomMessage(msg) {
     var ifMath = ["So easy.", "C'mon, gimme some challenge.", "ez pz", "Try something harder", "Psh, that was so easy", "Lmao that was ez af.", "Gimme something more challenging."]
     var ifLove = ["Baby don't hurt me,","No more."];
     var ifUserName = ["Nice to meet you,", "Pleased to meet you,", "Sup,", "It's a Pleasure to meet you,", "What's poppin',", "Wassup,", "What's crackin',", "How's it hangin',", "What's clicking,", "How you doing,", "What's new,"]
-    var ifAskUserName = ["What's your name?"]
+    var ifAskUserName = ["What's your name?"];
+    var ifBye = ["Take care,", "Nice meeting you,", "Nice talking to you,", "Bye,", "It's been a pleasure,", "Later,", "Until next time,"];
     var answerTypes = [general, greetings, ifQuestion, ifSwear, ifThank, ifSorry, ifSearch, ifMath, ifLove, ifUserName, ifAskUserName];
     
     //var selectedAnswerType = answerTypes[0];
@@ -118,7 +119,7 @@ function getRandomMessage(msg) {
     
     if (name == "n" && askedName) {
         selectedAnswerType = ifUserName;
-        name == msg;
+        name = msg;
         console.log(name);
     } else {
         selectedAnswerType = general;
@@ -150,6 +151,10 @@ function getRandomMessage(msg) {
     if (isSearch(msg)) {
         selectedAnswerType = ifSearch; // Selects answer type 'ifQuestion';
     };
+
+    if (isBye(msg)){
+        selectedAnswerType = ifBye;
+    }
 
     if (msg.includes("hello")) {};
 
@@ -310,12 +315,14 @@ function getRandomMessage(msg) {
         setTimeout(function() {$(".typing-indicator").css('display', 'none');printMessage(selectedPhrase);}, Math.floor(Math.random() * (3250 - 1500)) + 1500);
         return(ans);
     } else if (selectedAnswerType == ifUserName) {
-        return(selectedPhrase + " " + msg);
+        return(selectedPhrase + " " + name);
     }else if (selectedPhrase == ifSorry[3]) {
         setTimeout(function() {$(".typing-indicator").css('display', 'table');}, Math.floor(Math.random() * (1500 - 500)) + 500);
         setTimeout(function() {$(".typing-indicator").css('display', 'none');printMessage("For now.");}, Math.floor(Math.random() * (3250 - 1500)) + 1500);
         return(selectedPhrase = ifSorry[3]);
-    }else {
+    }else if (selectedAnswerType == ifBye) {
+        return(selectedPhrase + " " + name);
+    } else {
     	return(selectedPhrase);
     }
 }
@@ -352,6 +359,11 @@ function isSorry(msg) {
 
 function isMath(msg) {
     var list = ["+", "/", "*", "-", "^"];
+    return containsAnyOnList(msg, list);
+}
+
+function isBye(msg) {
+    var list = ["bye", "see ya", "talk to you next time"];
     return containsAnyOnList(msg, list);
 }
 

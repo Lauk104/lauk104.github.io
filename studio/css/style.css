@@ -1,0 +1,148 @@
+body {
+  background: white;
+  box-shadow: none;
+  transition: background 0.2s ease;
+}
+
+
+.wrap {
+  position: fixed;
+  top: 87%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.2s ease;
+}
+
+input:focus {
+  box-shadow: 0px 30px .8em -25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.025, 1.025);
+}
+
+input::-webkit-input-placeholder {
+  transition: color 0.2s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.textboxclass {
+height: 20px;
+width: 500px;
+}
+#chatBox {
+  height:600px;
+  overflow: scroll;
+}
+
+#chatText {
+    position: relative;
+    bottom: 0;
+    top:100px;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0);
+    margin: 0;
+    width:550px;
+}
+
+.userMessage {
+  font-family: Arial;
+  font-weight: lighter;
+  color:white;
+  text-align:left;
+    padding: .7em;
+    border-radius: 30px;
+    background:#0084ff;
+    display: table;
+    margin-bottom: 3px;
+
+}
+
+.chatBotMessage {
+  font-family: Arial;
+  font-weight: lighter;
+  color:black;
+    padding: .7em;
+    border-radius: 30px;
+    background:#e6e5ea;
+    display: table;
+    margin-bottom: 3px;
+    margin-left: auto;
+}
+
+.chatBotMessageLink {
+  font-family: Arial;
+  font-weight: lighter;
+  color:#0000EE;
+    padding: .7em;
+    border-radius: 30px;
+    background:#e6e5ea;
+    display: table;
+    margin-bottom: 3px;
+    margin-left: auto;
+}
+
+
+.typing-indicator {
+  background-color: #E6E7ED;
+  width: auto;
+  border-radius: 50px;
+  padding: 10px;
+  top:-35px;
+  right: 0px;
+  position: absolute;
+  display: none;
+}
+
+.typing-indicator::after {
+  height: 10px;
+  width: 10px;
+  left: -10px;
+  bottom: -10px;
+}
+.typing-indicator span {
+  height: 7.5px;
+  width: 7.5px;
+  float: left;
+  margin: 0 1px;
+  background-color: #9E9EA1;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.typing-indicator span:nth-of-type(1) {
+  -webkit-animation: 1s blink infinite 0.3333s;
+          animation: 1s blink infinite 0.3333s;
+}
+.typing-indicator span:nth-of-type(2) {
+  -webkit-animation: 1s blink infinite 0.6666s;
+          animation: 1s blink infinite 0.6666s;
+}
+.typing-indicator span:nth-of-type(3) {
+  -webkit-animation: 1s blink infinite 0.9999s;
+          animation: 1s blink infinite 0.9999s;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
